@@ -1,0 +1,111 @@
+squad:
+  name: avatar-ultra-profundo
+  display_name: "Avatar Ultra Profundo Squad"
+  description: "Squad de elite para dossiês psicológicos ultra profundos. 14 blocos, 50 camadas, 10 subcamadas de autossabotagem. Alimenta S.C.A.L.E."
+  icon: "🧠"
+  domain: audience_intelligence
+  version: "1.0.0"
+
+agents:
+  - id: avatar-chief
+    name: "Avatar Chief"
+    file: agents/avatar-chief.md
+    tier: 0
+    role: orchestrator
+    description: "Orquestrador do squad, sintetiza 14 blocos, compila dossiê, exporta pacote S.C.A.L.E."
+
+  - id: robert-cialdini
+    name: "Robert Cialdini"
+    file: agents/robert-cialdini.md
+    tier: 0
+    role: consumer-psychologist
+    description: "Raio X executivo e mecânica de decisão. Influence, Pre-Suasion, 7 princípios."
+
+  - id: daniel-kahneman
+    name: "Daniel Kahneman"
+    file: agents/daniel-kahneman.md
+    tier: 0
+    role: behavioral-economist
+    description: "Medos, contradições, Sistema 1 vs 2. Aversão à perda, heurísticas, vieses."
+
+  - id: brene-brown
+    name: "Brené Brown"
+    file: agents/brene-brown.md
+    tier: 1
+    role: shame-researcher
+    description: "Camadas de dor, vergonha, vulnerabilidade, dores inconfessáveis."
+
+  - id: jay-abraham
+    name: "Jay Abraham"
+    file: agents/jay-abraham.md
+    tier: 1
+    role: desire-architect
+    description: "Camadas de desejo, valor percebido, status, liberdade, validação."
+
+  - id: clayton-christensen
+    name: "Clayton Christensen"
+    file: agents/clayton-christensen.md
+    tier: 1
+    role: jtbd-master
+    description: "Identidade, contexto de vida, histórico de tentativas, JTBD (Jobs-to-be-Done)."
+
+  - id: eugene-schwartz
+    name: "Eugene Schwartz"
+    file: agents/eugene-schwartz.md
+    tier: 1
+    role: copywriter-master
+    description: "Linguagem real do avatar, níveis de consciência, resumo estratégico pro S.C.A.L.E."
+
+  - id: alex-hormozi-avatar
+    name: "Alex Hormozi (Avatar)"
+    file: agents/alex-hormozi-avatar.md
+    tier: 2
+    role: objection-surgeon
+    description: "Autossabotagem, crenças limitantes, objeções, 10 subcamadas comerciais."
+
+workflows:
+  - id: wf-avatar-from-zero
+    file: workflows/wf-avatar-from-zero.yaml
+    description: "Dossiê completo do zero, 5 fases (diagnose, create, review, feed-scale, handoff)"
+
+tasks:
+  - avatar-diagnose-input.md
+  - avatar-deep-dossie.md
+  - avatar-feed-scale.md
+  - avatar-linguagem-crua.md
+  - avatar-review-audit.md
+
+templates:
+  - input-avatar-tmpl.md
+  - dossie-avatar-tmpl.md
+  - linguagem-crua-tmpl.md
+  - resumo-scale-tmpl.md
+
+checklists:
+  - avatar-depth-checklist.md
+  - avatar-completeness-checklist.md
+
+data:
+  - avatar-methodology.md
+  - elite-minds-reference.md
+
+keywords:
+  - avatar
+  - avatar profundo
+  - persona
+  - cliente ideal
+  - audiência
+  - dor
+  - desejo
+  - objeção
+  - autossabotagem
+  - linguagem crua
+  - JTBD
+  - mecânica de decisão
+  - vergonha
+  - vulnerabilidade
+  - motivo real
+  - dossiê psicológico
+  - scale
+  - oferta
+  - código zero

@@ -1,0 +1,136 @@
+pack:
+  name: produto-uau
+  version: 1.0.0
+  short-title: Produto UAU Squad
+  description: >-
+    Fábrica de produtos com metodologia híbrida comprovada que gera o fator UAU.
+    Integra 5 frameworks (JTBD, Value Equation, Unique Mechanism, Blue Ocean ERRC,
+    Simplicity Principle) com 8 agentes clonados de mentes reais (Christensen,
+    Hormozi, Schwartz, Kim e Mauborgne, Jobs, Brunson, Dunford). Saída alimenta
+    direto o S.C.A.L.E. Criado para a imersão Código ZERO.
+  author: Nelmo Borges
+  icon: "🧪"
+  slashPrefix: produto-uau
+
+# Pattern Library
+pattern_library:
+  prefix: PU
+  naming_convention:
+    format: "{PREFIX}-{CATEGORY}-{NUMBER}"
+    example: "PU-TP-001"
+  categories:
+    - id: TP
+      name: "Task Patterns"
+      description: "Padrões para estrutura e execução de tasks de produto"
+    - id: EP
+      name: "Executor Patterns"
+      description: "Padrões para tipos e seleção de executores"
+    - id: PP
+      name: "Process Patterns"
+      description: "Padrões para workflows de criação de produto"
+    - id: IP
+      name: "Integration Patterns"
+      description: "Padrões para integração com outros squads (avatar, S.C.A.L.E.)"
+    - id: UP
+      name: "UAU Patterns"
+      description: "Padrões reutilizáveis de injeção de UAU"
+    - id: DP
+      name: "Documentation Patterns"
+      description: "Padrões para documentação de produto e spec"
+  patterns: []
+
+# Task Standards
+task_standards:
+  enforce_anatomy: true
+  validator: "PU-TP-001"
+  required_fields:
+    - task_name
+    - status
+    - responsible_executor
+    - execution_type
+    - input
+    - output
+    - action_items
+    - acceptance_criteria
+  optional_fields:
+    - estimated_time
+    - dependencies
+    - templates
+    - quality_gate
+    - handoff
+
+# Executor Types
+executor_types:
+  human:
+    id: "PU-EP-001"
+    name: "Human Executor"
+    use_for:
+      - "Validação final do produto"
+      - "Decisão de escopo (matar ou seguir)"
+      - "Override criativo do mecanismo único"
+  agent:
+    id: "PU-EP-002"
+    name: "Agent Executor (AI)"
+    use_for:
+      - "Diagnóstico de tipo de produto"
+      - "Descoberta de jobs (JTBD)"
+      - "Cálculo da Value Equation"
+      - "Auditoria dos 6 injetores de UAU"
+      - "Geração de first draft"
+  hybrid:
+    id: "PU-EP-003"
+    name: "Hybrid Executor"
+    use_for:
+      - "Validação do mecanismo único"
+      - "Review do ERRC Grid"
+      - "Aprovação do pacote S.C.A.L.E."
+  worker:
+    id: "PU-EP-004"
+    name: "Worker Executor"
+    use_for:
+      - "Export de spec pra Markdown"
+      - "Geração de templates de entrega"
+
+executor_selection:
+  requires_creativity: human
+  requires_judgment: [human, hybrid]
+  requires_speed: [agent, worker]
+  requires_consistency: worker
+  requires_validation: hybrid
+  requires_learning: agent
+
+# Workflow Configuration
+workflow_config:
+  checkpoint_policy: always_active
+  checkpoint_modes:
+    always_active: "Todo checkpoint DEVE passar"
+    skip_on_override: "Pode pular com aprovação manual"
+    advisory: "Só alerta, não bloqueia"
+  fail_fast: true
+  allow_manual_override: false
+
+# Agent Tiers
+tier_system:
+  tier_0:
+    name: "Orquestração"
+    agents:
+      - produto-chief
+  tier_1:
+    name: "Mentes-núcleo"
+    agents:
+      - clayton-christensen
+      - alex-hormozi-produto
+      - eugene-schwartz-produto
+      - kim-mauborgne
+      - steve-jobs
+  tier_2:
+    name: "Reposicionadores"
+    agents:
+      - russell-brunson
+      - april-dunford-produto
+
+# Squad Dependencies
+settings:
+  greeting: named
+  language: pt-BR
+  max_context_files: 5

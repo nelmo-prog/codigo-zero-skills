@@ -1,0 +1,120 @@
+squad:
+  name: produto-uau
+  display_name: "Produto UAU Squad"
+  description: "Fábrica de produtos com metodologia híbrida (JTBD + Value Equation + Unique Mechanism + Blue Ocean ERRC + Simplicity) + 6 Injetores de UAU"
+  icon: "🧪"
+  domain: product_architecture
+  version: "1.0.0"
+
+agents:
+  - id: produto-chief
+    name: "Produto Chief"
+    file: agents/produto-chief.md
+    tier: 0
+    role: orchestrator
+    description: "Orquestrador, roteia, coordena as 7 fases, audita os 6 injetores, compila spec + primeiro rascunho"
+
+  - id: clayton-christensen
+    name: "Clayton Christensen"
+    file: agents/clayton-christensen.md
+    tier: 1
+    role: jobs-to-be-done-master
+    description: "Jobs-to-be-Done, descobre o job funcional, emocional e social que o avatar contrata o produto pra fazer"
+
+  - id: alex-hormozi-produto
+    name: "Alex Hormozi"
+    file: agents/alex-hormozi-produto.md
+    tier: 1
+    role: value-equation-architect
+    description: "Value Equation, Delivery Cubes, desenha solução pra cada obstáculo entre avatar e Dream Outcome"
+
+  - id: eugene-schwartz-produto
+    name: "Eugene Schwartz"
+    file: agents/eugene-schwartz-produto.md
+    tier: 1
+    role: unique-mechanism-alchemist
+    description: "Unique Mechanism, cria mecanismo único proprietário com nome próprio que batiza o produto"
+
+  - id: kim-mauborgne
+    name: "W. Chan Kim e Renée Mauborgne"
+    file: agents/kim-mauborgne.md
+    tier: 1
+    role: blue-ocean-strategist
+    description: "Blue Ocean ERRC Grid, Eliminar, Reduzir, Aumentar, Criar, cria categoria nova"
+
+  - id: steve-jobs
+    name: "Steve Jobs"
+    file: agents/steve-jobs.md
+    tier: 1
+    role: simplicity-curator
+    description: "Simplicity Principle, remoção brutal, foco em 1 dor, UAU nasce da ausência"
+
+  - id: russell-brunson
+    name: "Russell Brunson"
+    file: agents/russell-brunson.md
+    tier: 2
+    role: opportunity-switch-strategist
+    description: "Opportunity Switch, Attractive Character, reposiciona desejo existente como nova oportunidade"
+
+  - id: april-dunford-produto
+    name: "April Dunford"
+    file: agents/april-dunford-produto.md
+    tier: 2
+    role: product-positioner
+    description: "Positioning do produto, define categoria onde o produto vence, atributos → valor → cliente ideal"
+
+workflows:
+  - id: wf-produto-from-zero
+    file: workflows/wf-produto-from-zero.yaml
+    description: "Criação de produto do zero, 7 fases completas"
+
+  - id: wf-produto-audit
+    file: workflows/wf-produto-audit.yaml
+    description: "Auditoria de produto existente, 3 fases"
+
+tasks:
+  - produto-diagnose-type.md
+  - produto-create-full.md
+  - produto-inject-uau.md
+  - produto-feed-scale.md
+  - produto-review.md
+  - produto-first-draft.md
+
+templates:
+  - produto-spec-tmpl.md
+  - uau-matrix-tmpl.md
+  - errc-grid-tmpl.md
+  - pacote-scale-tmpl.md
+  - first-draft-tmpl.md
+
+checklists:
+  - uau-factor-checklist.md
+  - produto-viability-checklist.md
+  - produto-completeness-checklist.md
+
+data:
+  - produto-methodology.md
+  - product-types-guide.md
+  - elite-minds-reference.md
+
+keywords:
+  - produto
+  - product architecture
+  - fator uau
+  - uau factor
+  - jobs to be done
+  - jtbd
+  - value equation
+  - unique mechanism
+  - blue ocean
+  - errc grid
+  - simplicity
+  - opportunity switch
+  - delivery cube
+  - mvp
+  - mecanismo unico
+  - infoproduto
+  - mentoria
+  - saas
+  - servico
+  - produto hibrido
