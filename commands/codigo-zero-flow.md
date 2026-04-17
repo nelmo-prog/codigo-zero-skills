@@ -64,8 +64,6 @@ AS 11 FASES:
   FASE 9.  PLANO 30 DIAS        (roadmap semana a semana)
   FASE 10. BASTIDORES           (momento especial ao vivo)
 
-REGRA QUE EU SIGO: multidão faminta antes do produto. Quer dizer: primeiro a gente entende o mercado e o cliente, depois cria o produto certo pra eles. Nunca ao contrário.
-
 PRA COMEÇAR, ME DIZ SÓ DUAS COISAS:
 
 1. Qual o nome do seu projeto? (pode ser o nome da sua empresa, do lançamento, ou qualquer apelido que ajude você a identificar. Ex: "confeitaria-ana", "mentoria-financas", "lancamento-abril")
